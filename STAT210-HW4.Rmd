@@ -1,0 +1,92 @@
+---
+title: "HW4"
+author: "Armando F"
+date: "9/16/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+1 / 200 * 30
+#> [1] 0.15
+(59 + 73 + 2) / 3
+#> [1] 44.7
+sin(pi / 2)
+#> [1] 1
+```
+
+```{r}
+x <- 3 * 4
+#object_name <- value
+```
+
+
+```{r}
+#i_use_snake_case
+#otherPeopleUseCamelCase
+#some.people.use.periods
+#And_aFew.People_RENOUNCEconvention
+```
+
+```{r}
+x
+#> [1] 12
+```
+
+```{r}
+this_is_a_really_long_name <- 2.5
+```
+
+```{r}
+r_rocks <- 2 ^ 3
+```
+
+```{r}
+#r_rock
+#> Error: object 'r_rock' not found
+#R_rocks
+#> Error: object 'R_rocks' not found
+r_rocks
+# Typing and casei 
+```
+
+```{r}
+seq(1, 10)
+#>  [1]  1  2  3  4  5  6  7  8  9 10
+```
+
+```{r}
+x <- "hello world"
+```
+
+```{r}
+y <- seq(1, 10, length.out = 5)
+y
+#> [1]  1.00  3.25  5.50  7.75 10.00
+```
+
+```{r}
+(y <- seq(1, 10, length.out = 5))
+#> [1]  1.00  3.25  5.50  7.75 10.00
+```
+
+```{r}
+my_variable <- 10
+#my_varıable the variable had "ı" instead of "i".
+#> Error in eval(expr, envir, enclos): object 'my_varıable' not found.
+```
+
+```{r}
+library(tidyverse)
+library(fansi)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+
+filter(mpg, cyl == 8)
+filter(mpg, drv > 8 )
+```
+
